@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/metric');
+
+body {
+    background: #fff1e5;
+    font-family: 'Metric', sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.security-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #262a33;
+    color: #fff;
+    line-height: 0.7;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+}
+
+.security-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #1f222b;
+    border-radius: 5px;
+}
+
+.symbol {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 0.6em;
+    color: #ccc;
+}
+
+.openPrice {
+    font-size: 0.7em;
+    color: #999;
+    padding-top: 10px;
+}
+
+.change-percent {
+    font-weight: bold;
+    color: green;
+    font-size: 0.8em;
+}
+
+.change-percent.negative {
+    color: red;
+}

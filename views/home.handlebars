@@ -1,0 +1,21 @@
+<h3>Security Changes</h3>
+<div class="security-container">
+    {{#each items}}
+      <div class="security-box">
+        <div class="security-box-symbols">
+            <p class="symbol">{{symbol}}</p>
+            <p class="name">{{name}}</p>
+        </div>
+        <div class="security-box-changes">
+            <p class="openPrice">{{openPrice}}</p>
+            <p class="change-percent{{#if (isNegative changePercent)}} negative{{/if}}">
+                {{#if (isNegative changePercent)}}
+                    ▼ 
+                {{else}}
+                    ▲ 
+                {{/if}} {{changePercent}}%
+            </p>
+        </div>
+      </div>
+    {{/each}}
+</div>

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "lib": ["esnext.asynciterable", "dom"],
+  },
+  "ts-node": {
+    "target": "es6",
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "include": ["./**/*.ts"],
+  "exclude": [
+    "**/node_modules/*"
+  ]
+}
